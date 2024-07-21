@@ -1,0 +1,39 @@
+body {
+    display: flex; /* تنظیم نمایش به صورت فلکس */
+    justify-content: center; /* تراز کردن محتوا به صورت افقی */
+    align-items: center; /* تراز کردن محتوا به صورت عمودی */
+    height: 100vh; /* تنظیم ارتفاع صفحه به 100 درصد ارتفاع نمای قابل مشاهده */
+    margin: 0; /* حذف حاشیه‌های پیش‌فرض */
+    font-family: 'Arial', sans-serif; /* تنظیم فونت */
+    background-color: #282c34; /* تنظیم رنگ پس‌زمینه */
+    color: #ffffff; /* تنظیم رنگ متن */
+}
+
+h1 {
+    font-size: 3em; /* تنظیم اندازه فونت عنوان */
+    margin-bottom: 20px; /* فاصله از پایین */
+}
+
+#game-board {
+    display: grid; /* تنظیم نمایش به صورت گرید */
+    grid-template-columns: repeat(3, 100px); /* تنظیم سه ستون با عرض 100 پیکسل */
+    grid-template-rows: repeat(3, 100px); /* تنظیم سه ردیف با ارتفاع 100 پیکسل */
+    gap: 10px; /* فاصله بین خانه‌های گرید */
+}
+
+.cell {
+    width: 100px; /* عرض خانه‌ها */
+    height: 100px; /* ارتفاع خانه‌ها */
+    background-color: #61dafb; /* رنگ پس‌زمینه خانه‌ها */
+    display: flex; /* تنظیم نمایش به صورت فلکس */
+    justify-content: center; /* تراز کردن محتوا به صورت افقی */
+    align-items: center; /* تراز کردن محتوا به صورت عمودی */
+    font-size: 2em; /* تنظیم اندازه فونت */
+    cursor: pointer; /* تغییر شکل نشانگر موس به صورت اشاره‌گر */
+    border: 5px solid #282c34; /* تنظیم حاشیه خانه‌ها */
+    transition: background-color 0.3s; /* افزودن انیمیشن برای تغییر رنگ پس‌زمینه */
+}
+
+.cell:hover {
+    background-color: #21a1f1; /* تغییر رنگ پس‌زمینه در حالت هاور */
+}
